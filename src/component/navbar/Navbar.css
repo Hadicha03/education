@@ -1,0 +1,57 @@
+.logo img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+nav{
+    padding: 10px 0px;
+    background-color: rgb(229, 140, 67);
+}
+nav .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+
+}
+.logo_ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  gap: 60px;
+}
+.link {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+.link a{
+    text-decoration: none;
+    font-size: 17px;
+    cursor: pointer;
+}
+.link li{
+color: white;
+
+}
+.social{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    cursor: pointer;
+}
+.social .inst{
+    font-size: 21px;
+}
+
+.social div{
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 10px;
+}
+.social div span{
+    padding-top: 5px;
+    font-size: 19px;
+}
