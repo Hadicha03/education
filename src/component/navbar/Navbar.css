@@ -1,3 +1,9 @@
+nav{
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+}
+
 .logo img{
     width: 70px;
     height: 70px;

@@ -2,6 +2,7 @@
 display: flex;
 align-items: center;
 justify-content: space-between;
+padding-top: 94px;
 
 }
 .service .container{
@@ -81,4 +82,77 @@ border-radius: 3px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid rgb(255, 213, 0);
+}
+.serv{
+    background-color: rgb(249, 249, 249);
+    text-align: center;
+    padding: 60px 0px;
+}
+.serv h1{
+font-size: 60px;
+padding: 10px;
+color: rgb(183, 151, 70);
+}
+.we_desc{
+    font-size: 17px;
+    color: rgb(183, 151, 70);
+}
+.box{
+    width: 330px;
+    height: 270px;
+    /* border: 1px solid rgb(183, 151, 70); */
+    background-color: white;
+    border-radius: 15px;
+    /* text-align: center; */
+    padding: 15px;
+    transition: all .3s ease;
+    cursor: pointer;
+    position: relative;
+    
+}
+.box  p{
+  /* background-color: white; */
+  color: white;
+  display: none;
+}
+
+.box p{
+    transition: all .3s ease;
+}
+
+.box:hover div p{
+    /* background-color:rgb(183, 151, 70) ; */
+    display: block;
+    color: white;
+}
+
+.box:hover{
+    background-color: rgb(183, 151, 70);
+    color: white;
+    border: 1px solid white;
+    height: 340px;
+}
+
+
+.box:hover h3{
+    color: white;
+}
+.box img{
+    width: 180px;
+}
+.our_service{
+    padding: 40px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.box h3{
+    color: rgb(183, 151, 70);
+    padding-top: 10px;
+}
+.box p{
+    line-height: 22px;
+    padding: 10px;
 }

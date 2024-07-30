@@ -17,10 +17,6 @@ function Home() {
       <span className='global'>Global Edu Group </span>
         <h1 className='bealive'>Sizning ishonchli  hamrohingiz </h1>
       </div>
-
-       
-          
-
         </div>
       </div>
       <main>
@@ -69,6 +65,49 @@ function Home() {
             <img src="./imgs/worker.jpg" alt="" />
           </div>
           </div>
+        </section>
+        <section className='serv'>
+       <div className="container">
+        <h1>Bizning xizmatlarimiz</h1>
+        <p className='we_desc'>Biz universitetni tanlaymiz va qabul qilishda yordam beramiz</p>
+      <div className="our_service">
+        <div className='box'>
+          <img src="./imgs/first.png" alt="" />
+          <h3>Bepul maslahat</h3>
+          <div>
+            <p>Biz universitet yo'nalishlari, hujjatlar va imtihonlar haqida batafsil ma'lumot beramiz</p>
+          </div>
+        </div>
+        <div className='box'>
+          <img src="./imgs/second.png" alt="" />
+          <h3>15 daqiqada universitet tanlash</h3>
+          <div>
+            <p>Abituriyent talablariga mos keladigan o'quv muassasasini tanlashda ko'maklashish</p>
+          </div>
+        </div>
+        <div className='box'>
+          <img src="./imgs/third.png" alt="" />
+          <h3>Hujjatlarni yig'ishda yordam</h3>
+          <div>
+            <p>Qabulning har bir bosqichida sizga hujjatlar bilan bog'liq masalalarda yordam beramiz</p>
+          </div>
+        </div>
+        <div className='box'>
+          <img src="./imgs/fourth.png" alt="" />
+          <h3>Qabul strategiyasini ishlab chiqish</h3>
+          <div>
+            <p>Siz tanlagan ta'lim muassasasiga kirish uchun aniq reja tuzamiz</p>
+          </div>
+        </div>
+        <div className='box'>
+          <img src="./imgs/fiveth.png" alt="" />
+          <h3>Grantlar va stipendiyalar olishda yordam</h3>
+          <div>
+            <p>Dasturni tanlashda va chet el universitetlaridan grant olish uchun hujjat topshirishda yordam beramiz</p>
+          </div>
+        </div>
+      </div>
+       </div>
         </section>
       </main>
     </div>
