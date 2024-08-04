@@ -1,9 +1,50 @@
 .hero .container{
-display: flex;
-align-items: center;
-justify-content: space-between;
-padding-top: 94px;
+padding-top: 94px;  
 
+}
+.about{
+    margin-top: -90px;
+}
+.black{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.448);
+    padding-top: 290px;
+    padding-bottom: 319px;
+    color: white;
+}
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+.card{
+    color: white;
+    margin-bottom: -450px;
+    text-align: center;
+    padding: 20px 60px;
+    border-left: 1px solid white;
+    cursor: pointer;
+}
+.c1{
+    border-left: none;
+    padding-left: 0px;
+}
+.card h1{
+    font-size: 70px;
+    transition: all .3s ease;
+}
+.card h1:hover{
+    color: rgb(254, 184, 72);
+}
+.card p{
+    text-align: left;
+    font-size: 20px;
+    padding-top: 10px;
+    transition: all .3s ease;
+}
+.card p:hover{
+    color: rgb(254, 184, 72);
 }
 .service .container{
     display: flex;
@@ -41,29 +82,27 @@ border-radius: 3px;
     gap: 30px;
 }
 .hero{
-   background-image: url("https://media.istockphoto.com/photos/graduation-congratulationsthe-graduates-stand-inline-while-waiting-picture-id1263374465?b=1&k=20&m=1263374465&s=170667a&w=0&h=8I362WFUiKMJT0CAkZ12vMEy7LVxcekxbB2DhFczFCQ=");
+   background-image: url("https://studyone.uz/images/310300-0416e4af486bad639ee9a.jpg");
    background-repeat: no-repeat;
+   backdrop-filter: blur(50px);
    background-size: 100%;
    background-position: 60%;
-   padding-top: 280px;
-   padding-bottom: 229px;
+ 
 }
 .bealive{
-    color: rgb(255, 213, 0);
+    color: rgb(254, 184, 72);
     font-size: 48px;
-    padding-left: 20px;
-    padding-top: 10px;
+    
+  
 }
-.about{
-   
-  padding-left: 550px;
-}
+
 .global{
-    color: rgb(255, 213, 0);
+    color: rgb(215, 210, 210);
     font-weight: bold;
     font-size: 60px;
     text-align: center;
-   padding-left: 80px;
+   /* padding-left: 80px; */
+  margin-top: -500px;
 }
 .service .container{
     display: flex;
@@ -108,7 +147,7 @@ color: rgb(183, 151, 70);
     transition: all .3s ease;
     cursor: pointer;
     position: relative;
-    
+    box-shadow: 0px 0px 23px 1px rgb(183, 151, 70);
 }
 .box  p{
   /* background-color: white; */
@@ -156,3 +195,68 @@ color: rgb(183, 151, 70);
     line-height: 22px;
     padding: 10px;
 }
+
+.questions h1{
+text-align: center;
+font-size: 45px;
+color: rgb(254, 184, 72);
+padding: 50px 0px;
+}
+.quetion{
+    width: 100%;
+    background-color: white;
+    
+}
+.plus{
+    border: 1px solid rgb(254, 184, 72);
+    border-radius: 5px;
+    box-shadow: 0px 1px 20px 3px rgb(235, 201, 146);
+    margin-top: 40px;
+    color: rgb(254, 184, 72);
+    padding: 20px;
+    position: relative;
+}
+.plus h2{
+    font-size: 20px;
+}
+.btn{
+    background-color: rgb(254, 184, 72);
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    /* display: block; */
+}
+.desc{
+    /* display: none; */
+   width: 950px;
+  margin-top: 10px;
+}
+.desc p{
+    line-height: 22px;
+}
+
+/* .btn.active{
+    display: none;
+} */
+.btn2{
+    background-color: rgb(254, 184, 72);
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    /* display: none; */
+}
+/* .btn2.active{
+    display: block;
+} */

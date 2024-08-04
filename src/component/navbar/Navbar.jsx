@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { FaPhone } from "react-icons/fa6";
 import { FaInstagram, FaTelegram } from "react-icons/fa";
 import "./Navbar.css"
@@ -41,8 +41,11 @@ function Navbar() {
                     +998 71 205 51 51</p>
                 </div>
                 
-                
+                <Link to={"/advice"}>
+                <button className='free'>Bepul Maslahat</button>
+                </Link>
             </div>
+            
           
         </div>
       </nav>

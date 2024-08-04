@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { LiaUniversitySolid } from "react-icons/lia";
 import { RiFilePaper2Line } from "react-icons/ri";
 import { FaLaptopCode } from "react-icons/fa6";
@@ -7,17 +7,67 @@ import { PiPushPinThin } from "react-icons/pi";
 import { FaSackDollar } from "react-icons/fa6";
 import { VscLayers } from "react-icons/vsc";
 import { RiEarthFill } from "react-icons/ri";
+
 import "./Home.css"
+import Question from '../question/Question';
 function Home() {
+  const [plus,setPlus]=useState(false)
+  const [answer,setAnswer]=useState([
+    {
+      name:"Nostrifikatsiya nima?",
+      desc:"Nostrifikatsiya (nemischa Nostrifikatsiya, lot. Noster - bizning va lot. Facere - qilish) - bu chet davlatlarning ta'lim hujjatlarini tan olish tartibi, ya'ni ushbu hujjatlarning amal qilish muddati to'g'risida tegishli davlat organlarining roziligi."
+    },
+    {
+      name:"Xorijiy OTMlarning diplomi bilan ish topish?",
+      desc:"Ha, mumkin. Siz O'zbekistonda diplomingizni nostrifikatsiya qilasiz."
+    },
+    {
+      name:"Nostrifikatsiya  O'zbekistonda qayerga amalga oshiriladi?",
+      desc:"Diplomlarni tan olish va nostrifikatsiyalash uchun arizalarni qabul qilish faqat Davlat xizmatlari markazlari yoki Yagona interaktiv davlat xizmatlari portali orqali amalga oshiriladi."
+    },
+    {
+      name:"Xorijiy universitetlardan O'zbekistondagi universitetlarga o'tishda qanday muammolar paydo bo'ladi?",
+      desc:"- fuqaroning doimiy yashash joyida (agar bu oliy o'quv yurtining salohiyati (qamrovi) yoki tegishli yo'nalishdagi oliy o'quv yurtida bakalavr ma'lumoti yo'qligi sababli mumkin bo'lmasa) istisno asosida boshqa sohaga tavsiya qilinishi mumkin); - talaba tahsil olayotgan bakalavriat ta'lim yo'nalishining ko'chirilgan bakalavr yo'nalishi bilan muvofiqligi (bunday yo'nalish bo'lmagan taqdirda, tegishli yo'nalish taklif etiladi); - talaba chet elda tahsil olayotgan bakalavriat ta'limi yo'nalishlarining o'ziga xos xususiyatlarini hisobga olgan holda, sirtqi va kechki o'qish shakllari odatda tavsiya etiladi; - talabalar boshqa universitetga o'tkazishda O'zbekiston oliy o'quv yurtlarining mavjud imkoniyatlari (xususan, moddiy-texnika bazasi, smena nisbati, professor-o'qituvchilar tarkibining shtat darajasi va boshqalar) hisobga olinadi. );"
+    },
+    {
+      name:"Xorijiy universitetlardan O'zbekistondagi oliy o'quv yurtlariga o'tish uchun qanday hujjatlar to'plash kerak?",
+      desc:"Fuqarolar hududiy ishchi guruhlarga quyidagi hujjatlarni taqdim etishlari shart: - ariza (o'sha yerda to'ldirilishi kerak); - reyting daftarchasi yoki transkript nusxasi; - pasport nusxasi; O'tkazilgan talabalar respublika oliy o'quv yurtlarida o'qishni faqat pullik-shartnoma asosida davom ettirishlari mumkin 'Agar sizda biron bir savol bo'lsa, to'g'ridan-to'g'ri mintaqaviy ishchi guruhlarga murojaat qilishingiz yoki Oliy va o'rta maxsus ta'lim vazirligining quyidagi raqamlariga qo'ng'iroq qilishingiz mumkin - 71-246-38-57', - deyiladi Ta'lim sifatini nazorat qilish davlat inspektsiyasida."
+    },
+    {
+      name:"Qaysi universitetlardan imtihonsiz(to'g'ridan to'g'ri) o'tishim mumkin?",
+      desc:"Chet elda berilgan ta'lim to'g'risidagi hujjatlarni tan olish va nostrifikatsiyalashning yangi tartibi 2019 yil 1 martdan joriy qilingan. U Prezidentning 2019 yil 16 yanvardagi farmoni bilan tasdiqlangan. № PP-4119. Xususan, xalqaro miqyosda tan olingan tashkilotlar reytingida birinchi o'rinlarni egallagan (Quacquarelli Symonds World University Rankings, Times Higher Education, Academic Ranking of xorijiy ta'lim muassasalarini bitirgan) fuqarolar uchun ta'lim hujjatlari to'g'ridan-to'g'ri (maxsus testlarsiz) tan olinadi va nostrifikatsiya qilinadi. Jahon universitetlari)."
+    },
+  ])
   return (
     <div className='home'>
       <div className="hero">
-        <div className="container">
+       <div className="black">
+       <div className="container">
       <div className="about">
       <span className='global'>Global Edu Group </span>
         <h1 className='bealive'>Sizning ishonchli  hamrohingiz </h1>
       </div>
+      <div className="cards">
+        <div className="card c1">
+          <h1>6000 +</h1>
+          <p>Qabul qilingan talabalar</p>
         </div>
+        <div className="card">
+          <h1>25 +</h1>
+          <p>Ta'lim muassasalari</p>
+        </div>
+        <div className="card">
+          <h1>215 +</h1>
+          <p>Mutaxassisliklar</p>
+        </div>
+        <div className="card">
+          <h1>15 +</h1>
+          <p>Hamkor davlatlar</p>
+        </div>
+        
+      </div>
+        </div>
+       </div>
       </div>
       <main>
         <section className='service'>
@@ -108,6 +158,16 @@ function Home() {
         </div>
       </div>
        </div>
+        </section>
+        <section>
+          <div className="container">
+            <div className="questions">
+             <h1>Tez-tez so'raladigan savollar</h1>  
+             <div className="quetion">
+            <Question answer={answer} plus={plus} setPlus={setPlus}/>
+             </div>
+            </div>
+          </div>
         </section>
       </main>
     </div>

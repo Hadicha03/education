@@ -61,3 +61,17 @@ color: white;
     padding-top: 5px;
     font-size: 19px;
 }
+.free{
+    padding: 10px 25px;
+    background-color: rgb(229, 140, 67);
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-left: 30px;
+    transition: all .3s ease;
+}
+.free:hover{
+    background-color: white;
+    color: rgb(229, 140, 67);
+}
