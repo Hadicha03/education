@@ -11,7 +11,7 @@ function Navbar() {
          <div className='logo_ul'>
         <NavLink to={"/home"}>
         <div className="logo">
-                <img src="./public/imgs/logo.jpg" alt="" />
+                <img src="./imgs/logo.jpg" alt="" />
             </div>
         </NavLink>
             <ul className="link">

@@ -6,7 +6,7 @@ function Advice() {
     const [some,setSome]=useState()
 const handleSubmit=(e)=>{
     e.preventDefault()
-    
+
 }
   return (
    
@@ -14,7 +14,7 @@ const handleSubmit=(e)=>{
         <div className="container">
         <h1>Bepul maslahat olish uchun 3 qadam</h1>
         <ol className="linkes">
-            <li> Shaklni to'ldiring'</li>
+            <li> Shaklni to'ldiring</li>
             <li> Universitetlar ro'yxatini yuklab oling</li>
             <li>Universitetni tanlang va bepul maslahat oling</li>
         </ol>
