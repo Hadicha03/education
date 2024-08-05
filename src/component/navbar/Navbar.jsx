@@ -9,11 +9,12 @@ function Navbar() {
       <nav>
         <div className="container">
          <div className='logo_ul'>
-        <NavLink to={"/home"}>
-        <div className="logo">
+       
+       <Link to={"/"} >
+       <div className="logo">
                 <img src="./imgs/logo.jpg" alt="" />
-            </div>
-        </NavLink>
+            </div></Link>
+      
             <ul className="link">
                 <NavLink>
                     <li>Universitetlar</li>

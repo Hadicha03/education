@@ -7,6 +7,28 @@ function Advice() {
 const handleSubmit=(e)=>{
     e.preventDefault()
 
+
+    const myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+    
+    const raw = JSON.stringify({
+      "fullName": name,
+      "phone": number
+    });
+    
+    const requestOptions = {
+      method: "POST",
+      headers: myHeaders,
+      body: raw,
+      redirect: "follow"
+    };
+    
+    fetch("http://a0b4-178-218-201-17.ngrok-free.app/api/advice", requestOptions)
+      .then((response) => response.text())
+      .then((result) => console.log(result))
+      .catch((error) => console.error(error));
+      
+    
 }
   return (
    
@@ -19,15 +41,13 @@ const handleSubmit=(e)=>{
             <li>Universitetni tanlang va bepul maslahat oling</li>
         </ol>
        <form onSubmit={handleSubmit} className='form' action="">
-       <input onChange={(e)=>{
+       <input value={name} onChange={(e)=>{
         setName(e.target.value)
        }} placeholder=' ismingizni kiriting' type="text" />
-            <input onChange={(e)=>{
+            <input value={number} onChange={(e)=>{
         setNumber(e.target.value)
        }} placeholder='+998 ' type="number" /><br />
-            <input onChange={(e)=>{
-        setSome(e.target.value)
-       }} className='something' type="text" /><br />
+           <br />
             <button>Yuborish</button>
 
        </form>
