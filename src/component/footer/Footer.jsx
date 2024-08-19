@@ -1,7 +1,8 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { FaTelegram,FaFacebook } from "react-icons/fa";
-import { RiInstagramLine } from "react-icons/ri";
+import { FaInstagram} from "react-icons/fa";
+
 import "./Footer.css"
 function Footer() {
   return (
