@@ -30,12 +30,13 @@ function Navbar() {
          </div>
             <div className="social">
             <div>
-                    <span className='inst'><FaInstagram/> </span>
+                    <a href="http://instagram.com/global_edu_group"><span className='inst'><FaInstagram/> </span></a>
                 </div>
                 <div>
-                    <span className='inst'>
+                    <a href="https://t.me/GlobalEduGroupbot"><span className='inst'>
                         <FaTelegram/>
-                    </span>
+                    </span></a>
+                    
                 </div>
                 <div>
                     <span><FaPhone /></span>

@@ -3,7 +3,10 @@ nav{
     position: fixed;
     z-index: 99;
 }
-
+nav a{
+    text-decoration: none;
+    color: white;
+}
 .logo img{
     width: 70px;
     height: 70px;

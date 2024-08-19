@@ -2,39 +2,53 @@
 padding-top: 200px;
 }
 .advice h1{
-    font-size: 40px;
-    padding-bottom: 30px;
+    font-size: 55px;
+    padding-bottom: 20px;
+    color: rgb(229, 140, 67);
 }
-.linkes li{
-    font-size: 25px;
-    padding-top: 5px;
-}
+
 .form{
     padding-top: 50px;
     width: 890px;
-    margin-left: -50px;
+    
 
 }
 .form input{
-    width: 400px;
+    width: 500px;
     padding: 12px 15px;
     border: 1px solid rgb(229, 140, 67);
     border-radius: 5px;
-    margin-left: 30px;
-    margin-bottom: 20px;
+    /* margin-left: 30px; */
+    margin-bottom: 30px;
     
 }
 .form button{
-    width: 840px;
-    padding: 9px ;
+    width: 240px;
+    padding: 12px ;
     background-color: rgb(229, 140, 67);
     color: white;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 20px;
+    font-size: 15px;
     border: 1px solid white;
-    margin-left: 26px;
+    margin-left: 125px;
 }
 .form .something{
     width: 830px;
     border-radius: 10px;
+}
+.advice .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.adv_info{
+    width: 500px;
+}
+.adv_img{
+    width: 600px;
+}
+.adv_img img{
+    width: 90%;
+    border-radius: 30px;
 }
