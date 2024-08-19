@@ -4,6 +4,8 @@ function Advice() {
     const [name,setName]=useState()
     const [number,setNumber]=useState()
     const [some,setSome]=useState()
+ 
+
 const handleSubmit=(e)=>{
     e.preventDefault()
 
@@ -23,11 +25,10 @@ const handleSubmit=(e)=>{
       redirect: "follow"
     };
     
-    fetch("http://a0b4-178-218-201-17.ngrok-free.app/api/advice", requestOptions)
+    fetch("https://d187-178-218-201-17.ngrok-free.app/api/advice", requestOptions)
       .then((response) => response.text())
       .then((result) => console.log(result))
       .catch((error) => console.error(error));
-      
     
 }
   return (

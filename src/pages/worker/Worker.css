@@ -1,0 +1,52 @@
+.wr{
+    background-color: rgb(237, 201, 131);
+   margin-bottom: -100px;
+}
+
+
+.worker .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 150px 0px;
+}
+.work{
+    padding-top: 50px;
+    width: 260px;
+    /* height: 200px; */
+   background-color: white;
+   text-align: center;
+   padding: 30px 20px;
+   border-radius: 10px;
+   transition: all .3s ease;
+   cursor: pointer;
+   box-shadow: 0px 0px 2px 5px  white;
+}
+.work:hover{
+    background-color: rgb(209, 153, 56);
+    color: white;
+}
+.work:hover h3{
+    color: white;
+}
+.work img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+.work h3{
+    color: rgb(229, 140, 67);
+    padding-top: 20px;
+    font-size: 19px;
+}
+.work button{
+    padding: 6px 40px;
+    background-color: rgb(209, 153, 56);
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    border: 1px solid white;
+    margin-top: 15px;
+}

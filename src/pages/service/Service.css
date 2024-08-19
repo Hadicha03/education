@@ -1,0 +1,53 @@
+.amenity{
+    padding: 60px 0px;
+}
+
+
+
+.help{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    padding-top: 160px;
+    text-align: center;
+    
+}
+.help h1{
+    font-size: 45px;
+    padding-top: 50px;
+    color: rgb(229, 140, 67);
+    transition: all .3s ease;
+    cursor: pointer;
+}
+.help h1:hover{
+    color: rgb(87, 51, 21);
+}
+.help p{
+    width: 550px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 22px;
+    color: rgb(87, 51, 21);
+    padding-top: 50px;
+    line-height: 30px;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+.help p:hover{
+    color: rgb(229, 140, 67);
+}
+.help img{
+    width: 500px;
+    border-radius: 10px;
+}
+.help button{
+    text-align: center;
+    background-color: rgb(229, 140, 67);
+    border: none;
+    color: white;
+    padding: 10px 40px;
+    margin-top: 40px;
+    border-radius: 6px;
+    font-size: 17px;
+    cursor: pointer;
+}

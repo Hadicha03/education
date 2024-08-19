@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { LiaUniversitySolid } from "react-icons/lia";
 import { RiFilePaper2Line } from "react-icons/ri";
 import { FaLaptopCode } from "react-icons/fa6";
@@ -7,11 +7,14 @@ import { PiPushPinThin } from "react-icons/pi";
 import { FaSackDollar } from "react-icons/fa6";
 import { VscLayers } from "react-icons/vsc";
 import { RiEarthFill } from "react-icons/ri";
-
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 import "./Home.css"
 import Question from '../question/Question';
 function Home() {
-  const [plus,setPlus]=useState(false)
+ useEffect(()=>{
+  AOS.init({duration:1500})
+ },[])
   const [answer,setAnswer]=useState([
     {
       name:"Nostrifikatsiya nima?",
@@ -43,24 +46,24 @@ function Home() {
       <div className="hero">
        <div className="black">
        <div className="container">
-      <div className="about">
+      <div className="about" data-aos="zoom-in">
       <span className='global'>Global Edu Group </span>
         <h1 className='bealive'>Sizning ishonchli  hamrohingiz </h1>
       </div>
       <div className="cards">
-        <div className="card c1">
+        <div className="card c1" data-aos="zoom-out-up">
           <h1>6000 +</h1>
           <p>Qabul qilingan talabalar</p>
         </div>
-        <div className="card">
+        <div className="card" data-aos="zoom-out-up">
           <h1>25 +</h1>
           <p>Ta'lim muassasalari</p>
         </div>
-        <div className="card">
+        <div className="card" data-aos="zoom-out-up">
           <h1>215 +</h1>
           <p>Mutaxassisliklar</p>
         </div>
-        <div className="card">
+        <div className="card" data-aos="zoom-out-up">
           <h1>15 +</h1>
           <p>Hamkor davlatlar</p>
         </div>
@@ -72,9 +75,8 @@ function Home() {
       <main>
         <section className='service'>
           <div className="container">
-          
-         
-          <div className="hero_info">
+        
+          <div className="hero_info" data-aos="fade-right">
             <h1 className='h_desc'>Biz bilan ishonchli tarzda talaba  bo'ling!</h1>
      <div className="services">
      <div>
@@ -111,9 +113,12 @@ function Home() {
             </div>
      </div>
           </div>
-          <div className="hero_img">
+         
+         
+          <div className="hero_img" data-aos="fade-left">
             <img src="./imgs/worker.jpg" alt="" />
           </div>
+        
           </div>
         </section>
         <section className='serv'>
@@ -121,35 +126,35 @@ function Home() {
         <h1>Bizning xizmatlarimiz</h1>
         <p className='we_desc'>Biz universitetni tanlaymiz va qabul qilishda yordam beramiz</p>
       <div className="our_service">
-        <div className='box'>
+        <div className='box' data-aos="zoom-in">
           <img src="./imgs/first.png" alt="" />
           <h3>Bepul maslahat</h3>
           <div>
             <p>Biz universitet yo'nalishlari, hujjatlar va imtihonlar haqida batafsil ma'lumot beramiz</p>
           </div>
         </div>
-        <div className='box'>
+        <div className='box' data-aos="zoom-in">
           <img src="./imgs/second.png" alt="" />
           <h3>15 daqiqada universitet tanlash</h3>
           <div>
             <p>Abituriyent talablariga mos keladigan o'quv muassasasini tanlashda ko'maklashish</p>
           </div>
         </div>
-        <div className='box'>
+        <div className='box' data-aos="zoom-in">
           <img src="./imgs/third.png" alt="" />
           <h3>Hujjatlarni yig'ishda yordam</h3>
           <div>
             <p>Qabulning har bir bosqichida sizga hujjatlar bilan bog'liq masalalarda yordam beramiz</p>
           </div>
         </div>
-        <div className='box'>
+        <div className='box' data-aos="zoom-in">
           <img src="./imgs/fourth.png" alt="" />
           <h3>Qabul strategiyasini ishlab chiqish</h3>
           <div>
             <p>Siz tanlagan ta'lim muassasasiga kirish uchun aniq reja tuzamiz</p>
           </div>
         </div>
-        <div className='box'>
+        <div className='box' data-aos="zoom-in">
           <img src="./imgs/fiveth.png" alt="" />
           <h3>Grantlar va stipendiyalar olishda yordam</h3>
           <div>
@@ -164,12 +169,16 @@ function Home() {
             <div className="questions">
              <h1>Tez-tez so'raladigan savollar</h1>  
              <div className="quetion">
-            <Question answer={answer} plus={plus} setPlus={setPlus}/>
+            <Question answer={answer} />
              </div>
             </div>
           </div>
         </section>
       </main>
+      <div className="map" data-aos="zoom-in">
+        <h1>Bizning manzilimiz !</h1>
+      <iframe className='maps' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95915.88302474088!2d69.15082083297038!3d41.300784570026465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae6100685ee4b9%3A0xda10feb00f36bbeb!2sGlobal%20edu%20Group!5e0!3m2!1sen!2s!4v1723326479413!5m2!1sen!2s"></iframe>
+      </div>
     </div>
   )
 }

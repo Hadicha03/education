@@ -13,16 +13,17 @@ function Navbar() {
        <Link to={"/"} >
        <div className="logo">
                 <img src="./imgs/logo.jpg" alt="" />
-            </div></Link>
+            </div>
+        </Link>
       
             <ul className="link">
-                <NavLink>
+                <NavLink to={"/university"}>
                     <li>Universitetlar</li>
                 </NavLink>
-                <NavLink>
+                <NavLink to={"/service"}>
                     <li>Xizmatlar</li>
                 </NavLink>
-                <NavLink>
+                <NavLink to={"/worker"}>
                     <li>Kasblar</li>
                 </NavLink>
             </ul>
