@@ -35,9 +35,12 @@ function Footer() {
             </NavLink>
           </ul>
           <div className="socials">
-            <span><FaTelegram/></span>
+          <a href="http://instagram.com/global_edu_group"><span className='inst'><FaInstagram/> </span></a>
+          <a href="https://t.me/GlobalEduGroupbot"><span className='inst'><FaTelegram/> </span></a>
+                    
+                
             <span><FaFacebook/></span>
-            <span><RiInstagramLine/></span>
+         
             
           </div>
         </div>
