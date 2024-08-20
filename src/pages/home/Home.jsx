@@ -7,6 +7,8 @@ import { PiPushPinThin } from "react-icons/pi";
 import { FaSackDollar } from "react-icons/fa6";
 import { VscLayers } from "react-icons/vsc";
 import { RiEarthFill } from "react-icons/ri";
+import {  FaTelegram,FaTelegramPlane } from "react-icons/fa";
+
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import "./Home.css"
@@ -43,6 +45,14 @@ function Home() {
   ])
   return (
     <div className='home'>
+      <div className="tg">
+        <a href="https://t.me/GlobalEduGroupbot">
+        <span className='tgm'>
+   <FaTelegramPlane className='tel'/>
+        </span>
+        </a>
+       
+      </div>
       <div className="hero">
        <div className="black">
        <div className="container">
@@ -158,7 +168,7 @@ function Home() {
           <img src="./imgs/fiveth.png" alt="" />
           <h3>Grantlar va stipendiyalar olishda yordam</h3>
           <div>
-            <p>Dasturni tanlashda va chet el universitetlaridan grant olish uchun hujjat topshirishda yordam beramiz</p>
+            <p>Chet el universitetlaridan grant olish uchun hujjat topshirishda yordam beramiz</p>
           </div>
         </div>
       </div>

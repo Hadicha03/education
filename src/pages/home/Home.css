@@ -138,30 +138,46 @@ color: rgb(183, 151, 70);
 }
 .box{
     width: 330px;
-    height: 270px;
-    /* border: 1px solid rgb(183, 151, 70); */
+    height: 310px;
     background-color: white;
     border-radius: 15px;
-    /* text-align: center; */
     padding: 15px;
     transition: all .4s ease;
     cursor: pointer;
     position: relative;
     box-shadow: 0px 0px 23px 1px rgb(183, 151, 70);
+    margin-top: 40px;
+    
 }
 .box  p{
-  /* background-color: white; */
+    width: 100%;
+    border-radius: 15px;
+    
+    background-color: none;
+    /* color: none; */
+    /* padding: 20px 20px; */
+    left: 0;
+  position: absolute;
   color: white;
-  display: none;
+ z-index: -99;
+ 
   transition: all .4s ease;
 }
 
-.box p{
-    transition: all .3s ease;
+.box:hover p{
+    /* width: 100%; */
+    background-color: white;
+    color: rgb(183, 151, 70);
+    border-bottom: 2px solid rgb(183, 151, 70);
+    padding: 20px 10px;
+    left: 0;
+    top: -60;
+    
+    /* z-index: 99; */
 }
 
-.box:hover div p{
-    /* background-color:rgb(183, 151, 70) ; */
+/* .box:hover div p{
+    
     display: block;
     color: white;
 }
@@ -176,7 +192,7 @@ color: rgb(183, 151, 70);
 
 .box:hover h3{
     color: white;
-}
+} */
 .box img{
     width: 180px;
 }
@@ -278,4 +294,29 @@ padding: 50px 0px;
 }
 .f_left{
     width: 400px;
+}
+.tg{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 auto;
+    position: fixed;
+   right: 10px;
+   bottom: 20px;
+    background-color:  rgb(254, 184, 72);
+    color: white;
+    z-index: 99;
+}
+.tgm{
+   font-size: 35px;
+   margin-top: 30px;
+   cursor: pointer;
+}
+.tel{
+    margin-top: 10px;
+}
+.tg a{
+    text-decoration: none;
+    color: white;
 }
