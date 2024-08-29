@@ -376,7 +376,12 @@ position: absolute;
     background-color: rgba(255, 255, 255, 0);
   
   }
-
+.hero_info{
+    width: 400px;
+}
+.hero_info h1{
+    font-size: 35px;
+}
   .hero_info .services{
     width: 420px;
     justify-content: center;
@@ -384,13 +389,13 @@ position: absolute;
   }
 
   .hero_img{
-    width: 400px;
+    width: 350px;
     text-align: center;
     margin: 0 auto;
   }
   .hero_img img{
-    width: 350px;
-    height: 350px;
+    width: 320px;
+    height: 320px;
     text-align: center;
   }
  .serv{
