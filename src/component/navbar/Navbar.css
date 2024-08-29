@@ -2,6 +2,8 @@ nav{
     width: 100%;
     position: fixed;
     z-index: 99;
+    top: 0px;
+/* position: relative; */
 }
 nav a{
     text-decoration: none;
@@ -77,4 +79,69 @@ color: white;
 .free:hover{
     background-color: white;
     color: rgb(229, 140, 67);
+}
+.bars{
+    display: none;
+}
+.modal{
+    /* display: none; */
+position: absolute;
+z-index: -2;
+margin-top: 738px;
+
+width: 100%;
+background-color: rgb(226, 146, 100);
+text-align: center;
+}
+.modal .linke{
+   padding-top: 100px;
+   margin-bottom: 50px;
+}
+.linke li{
+    margin-top: 30px;
+    font-size: 27px;
+}
+.sociale{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    font-size: 30px;
+    margin-bottom: 60px;
+}
+/* .mark{
+    color: white;
+padding-top: 20px;
+position: absolute;
+right: 20px;
+font-size: 20px;
+} */
+.modal button{
+    margin-bottom: 140px;
+    margin-top: 31px;
+    margin-left: -5px;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 17px;
+}
+@media (max-width:467px){
+  
+    .logo{
+        padding-left: 15px;
+    }
+    .link{
+        display: none;
+    }
+    .social{
+        display: none;
+    }
+    .bars{
+        display: block;
+        
+    }
+    .bars span{
+        color: white;
+       padding-right: 20px;
+        font-size: 23px;
+        cursor: pointer;
+    }
 }

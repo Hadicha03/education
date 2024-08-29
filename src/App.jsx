@@ -8,9 +8,12 @@ import Service from './pages/service/Service'
 import Worker from './pages/worker/Worker'
 import Detail from './pages/detail/Detail'
 import University from './pages/university/University'
+import Univers from './pages/univers/Univers'
+import { useEffect, useState } from 'react'
 
 function App() {
 
+  const [datas,setDatas]=useState( [])
 
   return (
     <BrowserRouter>
@@ -22,7 +25,9 @@ function App() {
       <Route path='/service' element={<Service/>}/>
       <Route path='/worker' element={<Worker/>}/>
       <Route path='/detail/:id' element={<Detail/>}/>
-      <Route path='/university' element={<University/>}/>
+      <Route path='/university' element={<University datas={datas} />}/>
+      <Route path='/univers/:id' element={<Univers datas={datas} />}/>
+
     </Routes>
 
     <Footer/>

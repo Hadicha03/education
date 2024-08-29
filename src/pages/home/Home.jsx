@@ -85,7 +85,6 @@ function Home() {
       <main>
         <section className='service'>
           <div className="container">
-        
           <div className="hero_info" data-aos="fade-right">
             <h1 className='h_desc'>Biz bilan ishonchli tarzda talaba  bo'ling!</h1>
      <div className="services">
@@ -123,12 +122,9 @@ function Home() {
             </div>
      </div>
           </div>
-         
-         
           <div className="hero_img" data-aos="fade-left">
             <img src="./imgs/worker.jpg" alt="" />
           </div>
-        
           </div>
         </section>
         <section className='serv'>
@@ -190,6 +186,8 @@ function Home() {
       <iframe className='maps' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95915.88302474088!2d69.15082083297038!3d41.300784570026465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae6100685ee4b9%3A0xda10feb00f36bbeb!2sGlobal%20edu%20Group!5e0!3m2!1sen!2s!4v1723326479413!5m2!1sen!2s"></iframe>
       </div>
     </div>
+    // data-aos="fade-right"
+    // data-aos="fade-left"
   )
 }
 
