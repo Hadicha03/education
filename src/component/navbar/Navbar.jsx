@@ -14,13 +14,8 @@ function Navbar() {
     <div>
       <nav>
         <div className="container">
-        
-        
-         <div className='logo_ul'>
-       <Link to={"/"} >
-       <div className="logo">
-                <img src="./imgs/logo.jpg" alt="" />
-            </div>
+        <div className='logo_ul'>
+       <Link to={"/"} ><div className="logo"><img src="./imgs/logo.jpg" alt="" /></div>
         </Link>
       
             <ul className="link">
@@ -55,11 +50,7 @@ function Navbar() {
                 <button className='free'>Bepul Maslahat</button>
                 </Link>
             </div>
-            
-            <div onClick={()=>{
-barses()
-
-            }} className="bars">
+            <div onClick={()=>{ barses() }} className="bars">
                 <span><FaBarsStaggered/></span>
             </div>
             {bars &&

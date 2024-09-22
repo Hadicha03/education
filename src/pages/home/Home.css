@@ -115,12 +115,12 @@ border-radius: 3px;
 .hero_info{
     width: 600px;
 }
-.hero_img{
+.img_med{
     /* width: 800px; */
     /* height: 300px; */
     padding-top: 50px;
 }
-.hero_img img {
+.img_med img {
     width: 500px;
     height: 500px;
     border-radius: 50%;
@@ -326,24 +326,31 @@ padding: 50px 0px;
     text-decoration: none;
     color: white;
 }
-
+.info_med{
+    display: none;
+}
+.img_med{
+    display: none;
+}
 
 @media (max-width:467px){
+   
+   
    .hero{
-    margin-top: -210px;
+    margin-top: -260px;
     text-align: center;
+    padding-bottom: 20px;
    }
    .about{
     margin-top: 10px;
-  
    }
    .global{
-    font-size: 40px;
+    font-size: 35px;
    color: white;
    font-weight: bold;
    }
    .bealive{
-    font-size: 33px;
+    font-size: 30px;
     margin-bottom: 50px;
    }
   
@@ -376,24 +383,33 @@ position: absolute;
     background-color: rgba(255, 255, 255, 0);
   
   }
-.hero_info{
+  .hero_info{
+    display: none;
+  }
+.info_med{
+    display: block;
     width: 400px;
 }
-.hero_info h1{
+.info_med h1{
     font-size: 30px;
 }
-  .hero_info .services{
+  .info_med .services{
     width: 420px;
     justify-content: center;
     gap: 30px;
   }
-
-  .hero_img{
+.hero_img{
+    display: none;
+}
+.img_med{
+    display: block;
+}
+  .img_med{
     width: 350px;
     text-align: center;
     margin: 0 auto;
   }
-  .hero_img img{
+  .img_med img{
     width: 320px;
     height: 320px;
     text-align: center;

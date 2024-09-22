@@ -1,0 +1,28 @@
+
+
+.universes .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 150px;
+    text-align: center;
+    padding: 200px 0px;
+    flex-wrap: wrap;
+}
+.univer_info{
+    width: 500px;
+   /* color: white; */
+}
+.univer_info h2{
+    color: rgb(254, 184, 72);
+    padding: 20px 0px;
+}
+.univer_info p{
+    line-height: 25px;
+    color: rgb(249, 179, 67);
+    
+}
+.univer_img img{
+    width: 530px;
+    border-radius: 50px 0px 50px 0px;
+}

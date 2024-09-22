@@ -9,9 +9,9 @@ function University({datas}) {
         <div className="container">
             <div className="univers">
            
-        {}
+        
               <div className="unv">
-                <img src="https://studyone.uz/images/64506-IMG_2993-700x441%20(1).jpg" alt="" />
+               <Link to={"/univers"}> <img src="https://studyone.uz/images/64506-IMG_2993-700x441%20(1).jpg" alt="" /></Link>
                 <div>
                 <h2>Lorem ipsum dolor sit amet consectetur</h2>
                 <p>Tashkent</p>

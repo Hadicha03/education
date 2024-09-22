@@ -7,7 +7,7 @@ import "./Footer.css"
 function Footer() {
   return (
     <div>
-      <footer>
+      {/* <footer>
         <div className="container">
           <div className="logo">
             <img src="./imgs/logo.jpg" alt="" />
@@ -45,7 +45,7 @@ function Footer() {
             
           </div>
         </div>
-      </footer>
+      </footer> */}
     </div>
   )
 }

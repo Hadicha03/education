@@ -27,7 +27,7 @@ function App() {
       <Route path='/detail/:id' element={<Detail/>}/>
       <Route path='/university' element={<University datas={datas} />}/>
       <Route path='/univers/:id' element={<Univers datas={datas} />}/>
-
+{/* <Route path='/univers' element={<Univers/>}/> */}
     </Routes>
 
     <Footer/>
