@@ -13,11 +13,12 @@ function Univers({datas}) {
     <div className='universes'>
       <div className="container">
         <div className="univer_info">
-          <h2>Tashkent dkkfkfkfhlk kjjhdkfjsdmkf kdjhsakjhkf</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita provident illo et ratione labore sed cumque eligendi. Veritatis deleniti quod consequatur aliquam iure, assumenda provident sint reprehenderit dolores rerum, minima excepturi error esse? Odio labore harum necessitatibus id laborum reprehenderit aspernatur molestiae, eum excepturi maxime, deleniti impedit hic quod consequuntur.</p>
+          <h2>{product[0].name}</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio, velit! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde aliquam totam id quisquam tempore earum eius illum nulla neque distinctio quod magni odio, esse voluptatum deserunt itaque. Cupiditate, fuga dolorum!
+          </p>
         </div>
         <div className="univer_img">
-          <img src="https://studyone.uz/images/64506-IMG_2993-700x441.jpg" alt="" />
+          <img src={product[0].attachment.fileName} alt="" />
         </div>
       
       </div>

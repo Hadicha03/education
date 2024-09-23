@@ -1,5 +1,5 @@
 nav{
-   /* width: 100%; */
+   width: 100%;
     position: absolute;
     z-index: 99;
     top: 0px;
@@ -125,7 +125,7 @@ font-size: 20px;
 }
 @media (max-width:467px){
   nav{
-    width: 445px;
+    width: 420px;
   }
     .logo{
         padding-left: 15px;
