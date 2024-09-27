@@ -14,9 +14,9 @@ import { useEffect, useState } from 'react'
 function App() {
 
   const [datas,setDatas]=useState( [])
-  const [apiLink,setApiLink]=useState( "http://207.154.200.61:8081/api/view/getUniversities")
+  const [apiLink,setApiLink]=useState("https://207.154.200.61:8081/api/view/getUniversities")
  
-const getData=(api)=>{
+const getData=((api)=>{
   const requestOptions = {
     method: "GET",
     redirect: "follow"
@@ -26,7 +26,9 @@ const getData=(api)=>{
     .then((response) => response.json())
     .then((result) => setDatas(result))
     .catch((error) => console.error(error));
-}
+  }
+)
+
  useEffect(()=>{
   getData(apiLink)
 },[])
@@ -44,7 +46,7 @@ const getData=(api)=>{
       <Route path='/detail/:id' element={<Detail/>}/>
       <Route path='/university' element={<University datas={datas} />}/>
       <Route path='/univers/:id' element={<Univers datas={datas} />}/>
-{/* <Route path='/univers' element={<Univers/>}/> */}
+
     </Routes>
 
     <Footer/>

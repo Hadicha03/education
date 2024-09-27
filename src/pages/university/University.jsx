@@ -10,9 +10,9 @@ function University({datas}) {
             <div className="univers">
            
         
-              {datas.map((item)=>{
+              {datas?.map((item)=>{
                 return ( <div className="unv">
-                <Link to={`/univers${item.id}`}> <img src={item.attachment.url} alt="" /></Link>
+                <Link to={`/univers/${item.id}`}> <img src={item.attachment.url} alt="" /></Link>
                  <div>
                  <h2>{item.name}</h2>
                  <p>{item.place}</p>
